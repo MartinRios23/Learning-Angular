@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CAAA;EACD,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,GAAG;CACd;;AAED,AAAA,MAAM,CAAA;EACF,aAAa,EAAE,GAAG;CACrB",
+    "sources": [
+        "agregar-personajes.component.scss"
+    ],
+    "names": [],
+    "file": "agregar-personajes.component.css"
+}

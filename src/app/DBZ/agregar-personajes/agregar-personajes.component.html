@@ -1,0 +1,26 @@
+<h3>Agregar Personaje</h3>
+        <hr>
+        <form action="" (ngSubmit)="agregar()">
+            <!--Con la propiedad entre corchetes, yo estoy diciendo que hay un elemento dentro del componente (TS) que quiero guardar o usar ahí-->
+            <!--Con la propiedad entre paréntesis, significa que estoy emitiendo un evento. Es decir, estoy enviando algo al componente-->
+            <!-- [value]= "nuevo.nombre"
+                (input)= "cambiarNombre( $event )" -->
+            <input 
+                type="text" 
+                placeholder="Personaje"
+                name = "nombre"
+                [(ngModel)] = "nuevo.nombre"
+            >
+            <!--Con la propiedad entre corchetes y entre paréntesis, indico que estoy escuchando y emitiendo al mismo tiempo-->
+            
+            <input 
+                type="number" 
+                placeholder="Nivel de poder"
+                name = "poder"
+                [(ngModel)] = "nuevo.poder"
+            >
+    
+            <button type="submit">Agregar</button>
+            
+        </form>
+        <button (click)="eliminar()">Eliminar</button>

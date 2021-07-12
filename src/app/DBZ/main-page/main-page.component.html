@@ -1,0 +1,18 @@
+
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <!--De esta forma yo envio los datos del componente padre(arreglo de personajes) a traves del @input-->
+        <app-listado-personajes>
+        </app-listado-personajes>
+    </div>
+
+    <div class="col">
+        <!--Entre paréntesis significa que estoy recibiendo datos de un componente hijo-->
+        <app-agregar-personajes [nuevo]="nuevo">
+        </app-agregar-personajes>
+    </div>
+
+</div>
