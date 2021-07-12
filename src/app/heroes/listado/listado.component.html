@@ -1,0 +1,22 @@
+<h1>Listado de heroes</h1>
+
+<!--Esto se ejecuta si se cumple el if-->
+<div *ngIf="heroesBorrados; else noBorrado">
+  <h3>
+    Heroe Borrado : <small> {{ heroesBorrados }} </small>
+  </h3>
+</div>
+
+<!--Este sería el bloque a ejecutar en caso de que no se cumpla el if y pase al else-->
+<ng-template #noBorrado>
+  <h3>No se ha borrado nada todavía</h3>
+</ng-template>
+
+<button (click)="borrarHeroe()">Borrar Heroe</button>
+
+<!--De esta forma muestro todo lo que hay dentro del array-->
+<ul>
+  <li *ngFor="let i of heroes">
+    {{ i }}
+  </li>
+</ul>
